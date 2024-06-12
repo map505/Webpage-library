@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fremantle Library</title>
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script>
+        function myfunction() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("ham");
+            var h = document.getElementById("exi");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                x.style.flexDirection = "column";
+                y.style.display = "none";
+                h.style.display = "flex";
+                h.style.justifyContent = "space-around";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function exit() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("ham");
+            var h = document.getElementById("exi");
+            if (h.style.display === "flex") {
+                x.style.display = "none";
+                y.style.display = "block";
+                h.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div Class="Logo">
+                <h1>FREMANTLE LIBRARY</h1>
+            </div>
+
+            <nav>
+                <div class="thubnail-icon" id="ham" onclick="myfunction()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="menu">
+                    <li><a href="home.html" target="_top">Home</a></li>
+                    <li><a href="about.html" target="_top">About us</a></li>
+                    <li><a href="list.html" target="_top">Book list</a></li>
+                    <li><a href="contact.html" target="_top">Contact</a></li>
+                    <li><a href="login.html" target="_top">Login</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+        <div class="exit" id="exi" onclick="exit()">
+            <i class="fa-solid fa-x"></i>
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+        <div class="bookclass">
+            <div class="book-cover">
+                <img src="./images/moby.jpeg" alt="Moby-Dick">
+                <br>
+                <br>
+            </div>
+            <div class="book-info">
+                <h2>Moby-Dick</h2><br>
+                <p><strong>Author:</strong> Herman Melville</p><br>
+                <p><strong>Publication Date:</strong> 1851</p><br>
+                <p><strong>Genre:</strong> Novel, Adventure Fiction</p><br>
+                <p><strong>Description:</strong> "Moby-Dick" is a novel by Herman Melville. It tells the story of the
+                    obsessive quest of Ahab, captain of the whaling ship Pequod, for revenge on Moby Dick, a giant white
+                    sperm whale that had previously bitten off Ahab's leg at the knee during an earlier voyage. The
+                    novel is a complex literary work that explores themes such as class and social status, race, and the
+                    nature of good and evil.</p>
+                <br>
+                <h2>Reviews</h2>
+                <br>
+                <h4>Oliver Harris</h4>
+                <p>★★★★☆</p>
+                <p>"A timeless classic that delves into the depths of human nature and obsession. Melville's prose is
+                    poetic and powerful."</p>
+                <br>
+                <h4>Lily Thompson</h4>
+                <p>★★★★★</p>
+                <p>"An epic tale that captures the essence of the sea and the human spirit. A must-read for anyone
+                    interested in adventure and philosophy."</p>
+                <br>
+                <h4>Maxine Taylor</h4>
+                <p>★★★☆☆</p>
+                <p>"While the prose can be dense at times, 'Moby-Dick' is a profound exploration of the human psyche and
+                    our relationship with nature."</p>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="containerf">
+            <div class="containerf2">
+
+                <p>Walyalup Civic Centre</p>
+                <p>151 High Street</p>
+                <p>Fremantle WA 6160</p>
+                <P>Phone: 1300 693 736</P>
+                <P>TTY: 08 9432 9777</P>
+                <p>info@fremantle.wa.gov.au</p>
+                <p>freementlelibrary@autralia.com.au</p>
+
+            </div>
+
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.5525674567057!2d115.74549137563308!3d-32.054300273973986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a17ad0fc7941%3A0xc0214a95516d39e!2sFremantle%20Library!5e0!3m2!1ses-419!2sau!4v1717038589150!5m2!1ses-419!2sau"
+                    style="border:0;"></iframe>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Designed by Manuel Plata - All rights reserved Copyright ©</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the wealth of resources and services at Fremantle Library. Discover our collection of books, events, and more!">
+    <meta name="keywords" content="Fremantle Library, Books in Fremantle, Library events, Educational resources, Reading in Fremantle, Kids activities, Library services, Research in Fremantle, Reading community, Digital library, Membership registration, Library hours">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script>
+        function myfunction() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("ham");
+            var h = document.getElementById("exi");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                x.style.flexDirection = "column";
+                y.style.display = "none";
+                h.style.display = "flex";
+                h.style.justifyContent = "space-around";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function exit() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("ham");
+            var h = document.getElementById("exi");
+            if (h.style.display === "flex") {
+                x.style.display = "none";
+                y.style.display = "block";
+                h.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div Class="Logo">
+                <h1>FREMANTLE LIBRARY</h1>
+            </div>
+
+            <nav>
+                <div class="thubnail-icon" id="ham" onclick="myfunction()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="menu">
+                    <li><a href="home.html" target="_top">Home</a></li>
+                    <li><a href="about.html" target="_top">About us</a></li>
+                    <li><a href="list.html" target="_top">Book list</a></li>
+                    <li><a href="contact.html" target="_top">Contact</a></li>
+                    <li><a href="login.html" target="_top">Login</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+        <div class="exit" id="exi" onclick="exit()">
+            <i class="fa-solid fa-x"></i>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="about">
+            <h1>About Fremantle Library</h1>
+            <p>Fremantle Library is a place for everyone. Located within Walyalup Civic Centre, in the heart of
+                Fremantle, it offers innovative services, programs and collections. A place to discover your next
+                favourite read, to inspire your work, to think creatively, to learn through play, to connect, and to
+                simply enjoy. </p>
+            <br>
+            <br>
+            <h2>Monthly Newsletter</h2>
+                <p>We have a monthly newsletter! It's one of the best places to get updates and fun information on what
+                    is happening in and around the library. Sign up now to get our end-of-year newsletter that will be a
+                    great retrospective on the last 12 months.</p>
+                <br>
+                <h2>Gaming and Tech</h2>
+                <p>Fremantle Library offers public access to gaming consoles and gaming networks, a 3D printer, and
+                    interactive screens. Featured is a dedicated youth zone with an Xbox Series S, a PlayStation 5, and
+                    Nintendo Switch available for free play. There is also a 3D printer service available.</p>
+                <p>In the children's library there is an interactive touch screen featuring Busy Things, a free
+                    educational eResource for 3–11-year-olds.</p>
+                <br>
+                <h2>Current Services</h2>
+                <ul>
+                    <li>Public computers - please note computers will automatically shut down 15 minutes before closing
+                        time</li>
+                    <li>Printing - visit the <a href="http://www.printeron.com">PrinterOn site</a> to send to our
+                        printer before you visit</li>
+                    <li>Free 1-on-1 Tech Help - volunteer run, Tuesdays from 10am - 12pm and Wednesdays from 9:30am -
+                        12:30pm</li>
+                    <li>Public Wi-Fi</li>
+                    <li>Access to power and data for personal charging and device usage</li>
+                    <li>Scanning and photocopying</li>
+                    <li>Justice of the Peace (volunteer run, 10am-1pm weekdays when volunteer available)</li>
+                    <li>Community support worker under the LibraryConnect program - available Tuesday 1pm - 6pm,
+                        Wednesday 9am - 5pm, Thursday 1pm - 6pm and Saturday 9am - 2pm</li>
+                    <li>Returns chute, open 24/7, located on Newman Court side across from the FOMO building</li>
+                </ul>
+                <br>
+                <h2>Looking for help?</h2>
+                <p>If you need help getting online or accessing our resources, contact us on <a
+                        href="tel:+6194329766">9432 9766</a> during our opening hours or <a
+                        href="mailto:frelib@fremantle.wa.gov.au">frelib@fremantle.wa.gov.au</a>.</p>
+                <br>
+                <h2>Opening hours</h2>
+                <p>Regular opening hours</p>
+        </div>
+        <br>
+        <table class="time">
+
+            <tbody>
+
+                <tr>
+                    <td>Monday to Friday</td>
+                    <td>9am-7pm</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>9am-5pm</td>
+                </tr>
+                <tr>
+                    <td>Sunday and Public Holidays*</td>
+                    <td>11am-3pm</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+
+    <footer>
+
+        <div class="containerf">
+            <div class="containerf2">
+
+                <p>Walyalup Civic Centre</p>
+                <p>151 High Street</p>
+                <p>Fremantle WA 6160</p>
+                <P>Phone: 1300 693 736</P>
+                <P>TTY: 08 9432 9777</P>
+                <p>info@fremantle.wa.gov.au</p>
+                <p>freementlelibrary@autralia.com.au</p>
+
+            </div>
+
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.5525674567057!2d115.74549137563308!3d-32.054300273973986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a17ad0fc7941%3A0xc0214a95516d39e!2sFremantle%20Library!5e0!3m2!1ses-419!2sau!4v1717038589150!5m2!1ses-419!2sau"
+                    style="border:0;"></iframe>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Designed by Manuel Plata - All rights reserved Copyright ©</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

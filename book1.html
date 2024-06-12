@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the wealth of resources and services at Fremantle Library. Discover our collection of books, events, and more!">
+    <meta name="keywords" content="Fremantle Library, Books in Fremantle, Library events, Educational resources, Reading in Fremantle, Kids activities, Library services, Research in Fremantle, Reading community, Digital library, Membership registration, Library hours">
+    <title>Fremantle Library</title>
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script>
+        function myfunction() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("ham");
+            var h = document.getElementById("exi");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                x.style.flexDirection = "column";
+                y.style.display = "none";
+                h.style.display = "flex";
+                h.style.justifyContent = "space-around";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function exit() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("ham");
+            var h = document.getElementById("exi");
+            if (h.style.display === "flex") {
+                x.style.display = "none";
+                y.style.display = "block";
+                h.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div Class="Logo">
+                <h1>FREMANTLE LIBRARY</h1>
+            </div>
+
+            <nav>
+                <div class="thubnail-icon" id="ham" onclick="myfunction()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="menu">
+                    <li><a href="home.html" target="_top">Home</a></li>
+                    <li><a href="about.html" target="_top">About us</a></li>
+                    <li><a href="list.html" target="_top">Book list</a></li>
+                    <li><a href="contact.html" target="_top">Contact</a></li>
+                    <li><a href="login.html" target="_top">Login</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+        <div class="exit" id="exi" onclick="exit()">
+            <i class="fa-solid fa-x"></i>
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+        <div class="bookclass">
+            <div class="book-cover">
+                <img src="./images/pride.jpg" alt="Pride and Prejudice">
+                <br>
+                <br>
+            </div>
+            <div class="book-info">
+                <h2>Pride and Prejudice</h2><br>
+                <p><strong>Author:</strong> Jane Austen</p><br>
+                <p><strong>Publication Date:</strong> 1813</p><br>
+                <p><strong>Genre:</strong> Romance, Fiction</p><br>
+                <p><strong>Description:</strong> "Since its immediate success in 1813, Pride and Prejudice has remained
+                    one of the most popular novels in the English language. Jane Austen called this brilliant work "her
+                    own darling child" and its vivacious heroine, Elizabeth Bennet, "as delightful a creature as ever
+                    appeared in print." The romantic clash between the opinionated Elizabeth and her proud beau, Mr.
+                    Darcy, is a splendid performance of civilized sparring. And Jane Austen's radiant wit sparkles as
+                    her characters dance a delicate quadrille of flirtation and intrigue, making this book the most
+                    superb comedy of manners of Regency England.</p>
+                    <br>
+                    <h2> Reviews</h2>
+                    <br>
+                    <h4>Marcus gibs</h4>
+                    <p>★★★★☆</p>
+                    <p>"I have been meditating on the very great pleasure which a pair of fine eyes in the face of a pretty woman can bestow."
+                    </p>
+                    <br>
+                    <h4>MTharindu Dissanayake</h4>
+                <p>★★★★★</p>
+                <p>“i cannot fix on the hour, or the spot, or the look, or the words, which laid the foundation. it is too long ago. i was in the middle before i knew that i had begun.”
+                </p>
+                <br>
+                <h4>Troy</h4>
+                <p>★★★★★</p>
+                <p>“I was forced to read this by my future wife. I was not, however, forced to give it 5 stars."
+                </p>
+
+              
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="containerf">
+            <div class="containerf2">
+
+                <p>Walyalup Civic Centre</p>
+                <p>151 High Street</p>
+                <p>Fremantle WA 6160</p>
+                <P>Phone: 1300 693 736</P>
+                <P>TTY: 08 9432 9777</P>
+                <p>info@fremantle.wa.gov.au</p>
+                <p>freementlelibrary@autralia.com.au</p>
+
+            </div>
+
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.5525674567057!2d115.74549137563308!3d-32.054300273973986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a17ad0fc7941%3A0xc0214a95516d39e!2sFremantle%20Library!5e0!3m2!1ses-419!2sau!4v1717038589150!5m2!1ses-419!2sau"
+                    style="border:0;"></iframe>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Designed by Manuel Plata - All rights reserved Copyright ©</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

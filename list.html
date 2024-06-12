@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the wealth of resources and services at Fremantle Library. Discover our collection of books, events, and more!">
+    <meta name="keywords"
+        content="Fremantle Library, Books in Fremantle, Library events, Educational resources, Reading in Fremantle, Kids activities, Library services, Research in Fremantle, Reading community, Digital library, Membership registration, Library hours">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script>
+        function myfunction() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("ham");
+            var h = document.getElementById("exi");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                x.style.flexDirection = "column";
+                y.style.display = "none";
+                h.style.display = "flex";
+                h.style.justifyContent = "space-around";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function exit() {
+            var x = document.getElementById("menu");
+            var y = document.getElementById("ham");
+            var h = document.getElementById("exi");
+            if (h.style.display === "flex") {
+                x.style.display = "none";
+                y.style.display = "block";
+                h.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div Class="Logo">
+                <h1>FREMANTLE LIBRARY</h1>
+            </div>
+
+            <nav>
+                <div class="thubnail-icon" id="ham" onclick="myfunction()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="menu">
+                    <li><a href="home.html" target="_top">Home</a></li>
+                    <li><a href="about.html" target="_top">About us</a></li>
+                    <li><a href="list.html" target="_top">Book list</a></li>
+                    <li><a href="contact.html" target="_top">Contact</a></li>
+                    <li><a href="login.html" target="_top">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="exit" id="exi" onclick="exit()">
+            <i class="fa-solid fa-x"></i>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="list">
+            <h1>Book List</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                        <th>Genre</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong><a href="book1.html">Pride and Prejudice</a></strong></td>
+                        <td>A romantic novel that also critiques the British landed gentry at the end of the 18th
+                            century.</td>
+                        <td>Jane Austen</td>
+                        <td>1813</td>
+                        <td>Romance, Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="book2.html"> The Great Gatsby</a></strong></td> 
+                        <td>A novel about the American dream and the roaring twenties.</td>
+                        <td>F. Scott Fitzgerald</td>
+                        <td>1925</td>
+                        <td>Fiction, Tragedy</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book8.html">Moby-Dick</a></strong></td>
+                        <td>The saga of Captain Ahab and his relentless pursuit of the great white whale, Moby Dick.
+                        </td>
+                        <td>Herman Melville</td>
+                        <td>1851</td>
+                        <td>Adventure, Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book10.html">War and Peace</a></strong></td>
+                        <td>A novel that chronicles the history of the French invasion of Russia through the stories of
+                            five aristocratic families.</td>
+                        <td>Leo Tolstoy</td>
+                        <td>1869</td>
+                        <td>Historical Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book9.html">Crime and Punishment</a></strong></td>
+                        <td>A psychological drama about the moral dilemmas of a poor ex-student in St. Petersburg.</td>
+                        <td>Fyodor Dostoevsky</td>
+                        <td>1866</td>
+                        <td>Fiction, Psychological Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="book5.html">The Evening and the Morning</a></strong></td>
+                        <td>Thirty years ago we were introduced to Kingsbridge in The Pillars of the Earth, and now in
+                            this masterful prequel international bestseller Ken Follett will take us on a journey into a
+                            rich past, which will end where his masterpiece begins. </td>
+                        <td>Ken Follett</td>
+                        <td>2020</td>
+                        <td>Historical Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="book3.html">Never</a></strong></td>
+                        <td>More than a thriller, a gripping high stakes human drama with a chilling ‘What If’ premise
+                            from master storyteller, Ken Follett. Never is available to buy in bookshops and online now.
+                        </td>
+                        <td>ken Follett</td>
+                        <td>2021</td>
+                        <td>Contemporary</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="book4.html">The Pillars of the Earth</a></strong></td>
+                        <td>A spellbinding epic tale of ambition, anarchy, and absolute power set against the sprawling
+                            medieval canvas of twelfth-century England, The Pillars of the Earth is Ken Follett’s
+                            classic historical masterpiece.</td>
+                        <td>ken Follett</td>
+                        <td>1989</td>
+                        <td>Historical Fiction </td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book7.html">Fall of Giants</a></strong></td>
+                        <td>The first in Ken Follett’s bestselling Century Trilogy, Fall of Giants is a captivating
+                            novel that follows five families through the world-shaking dramas of the First World War,
+                            the Russian Revolution, and the struggle for votes for women. </td>
+                        <td>ken Follett</td>
+                        <td>2010</td>
+                        <td>Historical Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book6.html">A Column of Fire</a></strong></td>
+                        <td>Millions of readers have been enthralled by the saga that began in The Pillars of the Earth
+                            and World Without End, which now continues with Ken Follett’s magnificent, gripping A Column
+                            of Fire. </td>
+                        <td>ken Follett</td>
+                        <td>2017</td>
+                        <td>Historical Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book11.html">World Without End</a></strong></td>
+                        <td>DKen Follett’s masterful epic The Pillars of the Earth enchanted millions of readers with
+                            its compelling drama of war, passion and family conflict set around the building of a
+                            cathedral. World Without End takes readers back to medieval Kingsbridge two centuries later,
+                            as the men, women and children of the city once again grapple with the devastating sweep of
+                            historical change. </td>
+                        <td>Ken Follett</td>
+                        <td>2007</td>
+                        <td>Historical Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book10.html">The Divine Comedy</a></strong></td>
+                        <td>An epic poem describing Dante's journey through Hell, Purgatory, and Paradise.</td>
+                        <td>Dante Alighieri</td>
+                        <td>1320</td>
+                        <td>Epic Poetry</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="book5.html">One Hundred Years of Solitude</a></strong></td>
+                        <td>A multi-generational story of the Buendía family, set in the fictional town of Macondo.</td>
+                        <td>Gabriel García Márquez</td>
+                        <td>1967</td>
+                        <td>Magical Realism, Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book10.html">The Odyssey</a></strong></td>
+                        <td>An epic poem that follows the hero Odysseus on his journey home after the fall of Troy.</td>
+                        <td>Homer</td>
+                        <td>Around 8th century BC</td>
+                        <td>Epic Poetry</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book10.html">Frankenstein</a></strong></td>
+                        <td>A novel about a scientist who creates a grotesque creature in an unorthodox scientific
+                            experiment.</td>
+                        <td>Mary Shelley</td>
+                        <td>1818</td>
+                        <td>Gothic, Science Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book10.html">Great Expectations</a></strong></td>
+                        <td>A coming-of-age story that depicts the personal growth and development of an orphan named
+                            Pip.</td>
+                        <td>Charles Dickens</td>
+                        <td>1861</td>
+                        <td>Fiction, Bildungsroman</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book10.html">Love in the Time of Cholera</a></strong></td>
+                        <td>A romantic novel that tells the story of Florentino Ariza and Fermina Daza, whose love spans
+                            over fifty years.</td>
+                        <td>Gabriel García Márquez</td>
+                        <td>1985</td>
+                        <td>Romance, Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book10.html">Pedro Páramo</a></strong></td>
+                        <td>A novel that follows a man who travels to his mother’s hometown to find his father, only to
+                            discover a ghost town filled with spirits.</td>
+                        <td>Juan Rulfo</td>
+                        <td>1955</td>
+                        <td>Magical Realism, Fiction</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="Book10.html">Like Water for Chocolate</a></strong></td>
+                        <td>A novel that combines recipes with the story of Tita, a young woman whose emotions are
+                            infused into her cooking.</td>
+                        <td>Laura Esquivel</td>
+                        <td>1989</td>
+                        <td>Magical Realism, Romance</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+    <footer>
+
+        <div class="containerf">
+            <div class="containerf2">
+
+                <p>Walyalup Civic Centre</p>
+                <p>151 High Street</p>
+                <p>Fremantle WA 6160</p>
+                <P>Phone: 1300 693 736</P>
+                <P>TTY: 08 9432 9777</P>
+                <p>info@fremantle.wa.gov.au</p>
+                <p>freementlelibrary@autralia.com.au</p>
+
+            </div>
+
+            <div class="location">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.5525674567057!2d115.74549137563308!3d-32.054300273973986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a17ad0fc7941%3A0xc0214a95516d39e!2sFremantle%20Library!5e0!3m2!1ses-419!2sau!4v1717038589150!5m2!1ses-419!2sau"
+                    style="border:0;"></iframe>
+
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Designed by Manuel Plata - All rights reserved Copyright ©</p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
